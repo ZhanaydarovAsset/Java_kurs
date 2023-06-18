@@ -1,8 +1,9 @@
-package org.example;
+//package org.example;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import org.example.Students;
 
 /*
 Дана строка sql-запроса "select * from students where ". Сформируйте часть WHERE этого запроса, используя StringBuilder.
@@ -47,5 +48,8 @@ public class Main {
         }
         sqlQuery += result.toString();
         System.out.println(sqlQuery);
+        
+        Students.parsJSON();
     }
+
 }
